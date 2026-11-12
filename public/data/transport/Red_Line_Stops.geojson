@@ -1,0 +1,17 @@
+{
+"type": "FeatureCollection",
+"name": "Red_Line_Stops",
+"crs": { "type": "name", "properties": { "name": "urn:ogc:def:crs:OGC:1.3:CRS84" } },
+"features": [
+{"type":"Feature","properties":{"id":1},"geometry":{"type":"Point","coordinates":[3.38334400555704,6.475953581908414]}},
+{"type":"Feature","properties":{"id":2},"geometry":{"type":"Point","coordinates":[3.383598594334228,6.484680775367037]}},
+{"type":"Feature","properties":{"id":3},"geometry":{"type":"Point","coordinates":[3.373669632023916,6.507573129530957]}},
+{"type":"Feature","properties":{"id":4},"geometry":{"type":"Point","coordinates":[3.380034351453603,6.494925548792494]}},
+{"type":"Feature","properties":{"id":5},"geometry":{"type":"Point","coordinates":[3.36361337532501,6.532487931380198]}},
+{"type":"Feature","properties":{"id":6},"geometry":{"type":"Point","coordinates":[3.359030777335635,6.543490520311479]}},
+{"type":"Feature","properties":{"id":7},"geometry":{"type":"Point","coordinates":[3.345792160921888,6.578393679347744]}},
+{"type":"Feature","properties":{"id":8},"geometry":{"type":"Point","coordinates":[3.32580694191267,6.628467839120874]}},
+{"type":"Feature","properties":{"id":9},"geometry":{"type":"Point","coordinates":[3.316132568379545,6.64882482092982]}},
+{"type":"Feature","properties":{"id":10},"geometry":{"type":"Point","coordinates":[3.275107491816179,6.682180453028483]}}
+]
+}

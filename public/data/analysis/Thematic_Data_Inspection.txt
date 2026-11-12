@@ -1,0 +1,197 @@
+
+===========================================================================
+Terminal_Analysis.geojson
+===========================================================================
+Feature count: 25
+CRS: EPSG:4326
+Geometry: 0
+
+FIELDS:
+fid, id, Name, descriptio, extrude, visibility, drawOrder, icon, Passengers, Pop_2km, INDEX, Intersecti, Sp_Index
+
+SAMPLE RECORDS (first 5):
+{'fid': 1, 'id': None, 'Name': 'Igbologun', 'descriptio': None, 'extrude': 0, 'visibility': -1, 'drawOrder': 0, 'icon': None, 'Passengers': 1767, 'Pop_2km': 24000, 'INDEX': 0, 'Intersecti': 307, 'Sp_Index': 0.04}
+{'fid': 2, 'id': '07AC8195181C27A438CB', 'Name': 'Ebute Ero', 'descriptio': None, 'extrude': 0, 'visibility': 0, 'drawOrder': 0, 'icon': None, 'Passengers': 1530, 'Pop_2km': 101500, 'INDEX': 0, 'Intersecti': 695, 'Sp_Index': 0.75}
+{'fid': 3, 'id': '0C743C3FDE1C27A89862', 'Name': 'Ebute Ojo', 'descriptio': None, 'extrude': 0, 'visibility': 0, 'drawOrder': 0, 'icon': None, 'Passengers': 56683, 'Pop_2km': 86000, 'INDEX': 0, 'Intersecti': 662, 'Sp_Index': 0.23}
+{'fid': 4, 'id': None, 'Name': 'Oke Ira Nla', 'descriptio': None, 'extrude': 0, 'visibility': 0, 'drawOrder': 0, 'icon': None, 'Passengers': 6550, 'Pop_2km': 88000, 'INDEX': 0, 'Intersecti': 1010, 'Sp_Index': 0.39}
+{'fid': 5, 'id': None, 'Name': 'Lekki 1', 'descriptio': None, 'extrude': 0, 'visibility': 0, 'drawOrder': 0, 'icon': None, 'Passengers': 2197, 'Pop_2km': 88000, 'INDEX': 0, 'Intersecti': 1099, 'Sp_Index': 0.39}
+
+NUMERIC FIELD SUMMARY:
+fid: Min=1.00, Max=25.00, Mean=13.00
+extrude: Min=0.00, Max=0.00, Mean=0.00
+visibility: Min=-1.00, Max=0.00, Mean=-0.04
+drawOrder: Min=0.00, Max=0.00, Mean=0.00
+Passengers: Min=840.00, Max=56683.00, Mean=12344.84
+Pop_2km: Min=700.00, Max=162000.00, Mean=71628.00
+INDEX: Min=0.00, Max=34.00, Mean=1.36
+Intersecti: Min=304.00, Max=1309.00, Mean=684.64
+Sp_Index: Min=0.01, Max=0.75, Mean=0.31
+
+UNIQUE Name VALUES:
+  Addax
+  Alex
+  Badore
+  Baiyeku
+  Bariga
+  Coconut
+  Ebute Ero
+  Ebute Ojo
+  Festac
+  Five Cowries
+  Flour Mills
+  Ibasa
+  Igbologun
+  Ijede
+  Ijegun Egba
+  Ikorodu
+  Itu Agon
+  Lekki 1
+  Liverpool
+  Marina CMS
+  Mile 2
+  Oke Ira Nla
+  Oworonshoki
+  Sagbokoji
+  Tincan Island
+
+===========================================================================
+Route_Passenger_Analysis.geojson
+===========================================================================
+Feature count: 16
+CRS: EPSG:4326
+Geometry: 1
+
+FIELDS:
+id, Route, Passenger, fid_1, Route_Name, layer, Shape_Leng, DistSav, Time_save, Rout_index, Time_Class
+
+SAMPLE RECORDS (first 5):
+{'id': 0, 'Route': 'Ikorodu - Lekki 1 - Addax - Five Cowries', 'Passenger': 11053, 'fid_1': 0.0, 'Route_Name': '3     Ikorodu - Lekki 1 - Addax - Five Cowries', 'layer': '3', 'Shape_Leng': 0.21150654495, 'DistSav': 31.609, 'Time_save': 72.0, 'Rout_index': 0.2298, 'Time_Class': 'Moderate'}
+{'id': 0, 'Route': None, 'Passenger': 4380, 'fid_1': 1.0, 'Route_Name': 'F5   Coconut - Igbologun', 'layer': 'F5', 'Shape_Leng': 0.01441134705, 'DistSav': 0.0, 'Time_save': 0.0, 'Rout_index': 0.0, 'Time_Class': 'Low'}
+{'id': 0, 'Route': None, 'Passenger': 6067, 'fid_1': 2.0, 'Route_Name': 'F1   Ijegun Egba - Ibasa Snake Island)', 'layer': 'F1', 'Shape_Leng': 0.00461374789, 'DistSav': 0.0, 'Time_save': 0.0, 'Rout_index': 0.0, 'Time_Class': 'Low'}
+{'id': 0, 'Route': None, 'Passenger': 13498, 'fid_1': 3.0, 'Route_Name': '1A   Ebute Ojo - Ijegun Egba - Liverpool - Marina', 'layer': '1A', 'Shape_Leng': 0.23223449631, 'DistSav': 9.94, 'Time_save': 72.0, 'Rout_index': 0.1386, 'Time_Class': 'Moderate'}
+{'id': 0, 'Route': None, 'Passenger': 16242, 'fid_1': 4.0, 'Route_Name': '1B   Festac - Mile 2 - Liverpool', 'layer': '1B', 'Shape_Leng': 0.07623960744, 'DistSav': 5.328, 'Time_save': 35.0, 'Rout_index': 0.0376, 'Time_Class': 'Low'}
+
+NUMERIC FIELD SUMMARY:
+id: Min=0.00, Max=0.00, Mean=0.00
+Passenger: Min=0.00, Max=59051.00, Mean=15168.00
+fid_1: Min=0.00, Max=16.00, Mean=8.00
+Shape_Leng: Min=0.00, Max=0.25, Mean=0.11
+DistSav: Min=0.00, Max=73.66, Mean=20.44
+Time_save: Min=0.00, Max=260.00, Mean=70.00
+Rout_index: Min=0.00, Max=0.56, Mean=0.20
+
+UNIQUE Route_Name VALUES:
+  1A   Ebute Ojo - Ijegun Egba - Liverpool - Marina
+  1B   Festac - Mile 2 - Liverpool
+  2  Ikorodu - Ebute Ero - Marina
+  3     Ikorodu - Lekki 1 - Addax - Five Cowries
+  4    Badore - Oke Ire Nla - Lekki 1 - Five Cowries
+  5   Oworonshoki -Bariga -Ebute Ero- Marina -Flour Mills -Five cowries
+  6    Ijede - Badore
+  7    Baiyeku - Oke Ira Nla
+  8    Baiyeku - Lekki 1 - Addax - Five Cowries
+  9   Ikorodu - Flour Mills - Liverpool
+  F1   Ijegun Egba - Ibasa Snake Island)
+  F2   Liverpool - Itu Agon
+  F3   Alex - Sagbo Koji
+  F5   Coconut - Igbologun
+  F6  Flour Mills - Marina
+  F7 Marina-Five Cowries
+
+UNIQUE Route VALUES:
+  Ikorodu - Lekki 1 - Addax - Five Cowries
+
+===========================================================================
+Route_Time_Saved.geojson
+===========================================================================
+Feature count: 16
+CRS: EPSG:4326
+Geometry: 1
+
+FIELDS:
+id, Route, Passenger, fid_1, Route_Name, layer, Shape_Leng, DistSav, Time_save, Rout_index, Time_Class
+
+SAMPLE RECORDS (first 5):
+{'id': 0, 'Route': 'Ikorodu - Lekki 1 - Addax - Five Cowries', 'Passenger': 11053, 'fid_1': 0.0, 'Route_Name': '3     Ikorodu - Lekki 1 - Addax - Five Cowries', 'layer': '3', 'Shape_Leng': 0.21150654495, 'DistSav': 31.609, 'Time_save': 72.0, 'Rout_index': 0.2298, 'Time_Class': 'Moderate'}
+{'id': 0, 'Route': None, 'Passenger': 4380, 'fid_1': 1.0, 'Route_Name': 'F5   Coconut - Igbologun', 'layer': 'F5', 'Shape_Leng': 0.01441134705, 'DistSav': 0.0, 'Time_save': 0.0, 'Rout_index': 0.0, 'Time_Class': 'Low'}
+{'id': 0, 'Route': None, 'Passenger': 6067, 'fid_1': 2.0, 'Route_Name': 'F1   Ijegun Egba - Ibasa Snake Island)', 'layer': 'F1', 'Shape_Leng': 0.00461374789, 'DistSav': 0.0, 'Time_save': 0.0, 'Rout_index': 0.0, 'Time_Class': 'Low'}
+{'id': 0, 'Route': None, 'Passenger': 13498, 'fid_1': 3.0, 'Route_Name': '1A   Ebute Ojo - Ijegun Egba - Liverpool - Marina', 'layer': '1A', 'Shape_Leng': 0.23223449631, 'DistSav': 9.94, 'Time_save': 72.0, 'Rout_index': 0.1386, 'Time_Class': 'Moderate'}
+{'id': 0, 'Route': None, 'Passenger': 16242, 'fid_1': 4.0, 'Route_Name': '1B   Festac - Mile 2 - Liverpool', 'layer': '1B', 'Shape_Leng': 0.07623960744, 'DistSav': 5.328, 'Time_save': 35.0, 'Rout_index': 0.0376, 'Time_Class': 'Low'}
+
+NUMERIC FIELD SUMMARY:
+id: Min=0.00, Max=0.00, Mean=0.00
+Passenger: Min=0.00, Max=59051.00, Mean=15168.00
+fid_1: Min=0.00, Max=16.00, Mean=8.00
+Shape_Leng: Min=0.00, Max=0.25, Mean=0.11
+DistSav: Min=0.00, Max=73.66, Mean=20.44
+Time_save: Min=0.00, Max=260.00, Mean=70.00
+Rout_index: Min=0.00, Max=0.56, Mean=0.20
+
+UNIQUE Route_Name VALUES:
+  1A   Ebute Ojo - Ijegun Egba - Liverpool - Marina
+  1B   Festac - Mile 2 - Liverpool
+  2  Ikorodu - Ebute Ero - Marina
+  3     Ikorodu - Lekki 1 - Addax - Five Cowries
+  4    Badore - Oke Ire Nla - Lekki 1 - Five Cowries
+  5   Oworonshoki -Bariga -Ebute Ero- Marina -Flour Mills -Five cowries
+  6    Ijede - Badore
+  7    Baiyeku - Oke Ira Nla
+  8    Baiyeku - Lekki 1 - Addax - Five Cowries
+  9   Ikorodu - Flour Mills - Liverpool
+  F1   Ijegun Egba - Ibasa Snake Island)
+  F2   Liverpool - Itu Agon
+  F3   Alex - Sagbo Koji
+  F5   Coconut - Igbologun
+  F6  Flour Mills - Marina
+  F7 Marina-Five Cowries
+
+UNIQUE Route VALUES:
+  Ikorodu - Lekki 1 - Addax - Five Cowries
+
+===========================================================================
+Route_Distance_Saved.geojson
+===========================================================================
+Feature count: 16
+CRS: EPSG:4326
+Geometry: 1
+
+FIELDS:
+fid, id, Route, Passenger, fid_1, Route_Name, layer, Shape_Leng, DistSav, Time_save, Rout_index, Dist_Class
+
+SAMPLE RECORDS (first 5):
+{'fid': 1, 'id': 0, 'Route': 'Ikorodu - Lekki 1 - Addax - Five Cowries', 'Passenger': 11053, 'fid_1': 0.0, 'Route_Name': '3     Ikorodu - Lekki 1 - Addax - Five Cowries', 'layer': '3', 'Shape_Leng': 0.21150654495, 'DistSav': 31.609, 'Time_save': 72.0, 'Rout_index': 0.2298, 'Dist_Class': 'Moderate'}
+{'fid': 2, 'id': 0, 'Route': None, 'Passenger': 4380, 'fid_1': 1.0, 'Route_Name': 'F5   Coconut - Igbologun', 'layer': 'F5', 'Shape_Leng': 0.01441134705, 'DistSav': 0.0, 'Time_save': 0.0, 'Rout_index': 0.0, 'Dist_Class': 'Low'}
+{'fid': 3, 'id': 0, 'Route': None, 'Passenger': 6067, 'fid_1': 2.0, 'Route_Name': 'F1   Ijegun Egba - Ibasa Snake Island)', 'layer': 'F1', 'Shape_Leng': 0.00461374789, 'DistSav': 0.0, 'Time_save': 0.0, 'Rout_index': 0.0, 'Dist_Class': 'Low'}
+{'fid': 4, 'id': 0, 'Route': None, 'Passenger': 13498, 'fid_1': 3.0, 'Route_Name': '1A   Ebute Ojo - Ijegun Egba - Liverpool - Marina', 'layer': '1A', 'Shape_Leng': 0.23223449631, 'DistSav': 9.94, 'Time_save': 72.0, 'Rout_index': 0.1386, 'Dist_Class': 'Low'}
+{'fid': 5, 'id': 0, 'Route': None, 'Passenger': 16242, 'fid_1': 4.0, 'Route_Name': '1B   Festac - Mile 2 - Liverpool', 'layer': '1B', 'Shape_Leng': 0.07623960744, 'DistSav': 5.328, 'Time_save': 35.0, 'Rout_index': 0.0376, 'Dist_Class': 'Low'}
+
+NUMERIC FIELD SUMMARY:
+fid: Min=1.00, Max=16.00, Mean=8.50
+id: Min=0.00, Max=0.00, Mean=0.00
+Passenger: Min=0.00, Max=59051.00, Mean=15168.00
+fid_1: Min=0.00, Max=16.00, Mean=8.00
+Shape_Leng: Min=0.00, Max=0.25, Mean=0.11
+DistSav: Min=0.00, Max=73.66, Mean=20.44
+Time_save: Min=0.00, Max=260.00, Mean=70.00
+Rout_index: Min=0.00, Max=0.56, Mean=0.20
+
+UNIQUE Route_Name VALUES:
+  1A   Ebute Ojo - Ijegun Egba - Liverpool - Marina
+  1B   Festac - Mile 2 - Liverpool
+  2  Ikorodu - Ebute Ero - Marina
+  3     Ikorodu - Lekki 1 - Addax - Five Cowries
+  4    Badore - Oke Ire Nla - Lekki 1 - Five Cowries
+  5   Oworonshoki -Bariga -Ebute Ero- Marina -Flour Mills -Five cowries
+  6    Ijede - Badore
+  7    Baiyeku - Oke Ira Nla
+  8    Baiyeku - Lekki 1 - Addax - Five Cowries
+  9   Ikorodu - Flour Mills - Liverpool
+  F1   Ijegun Egba - Ibasa Snake Island)
+  F2   Liverpool - Itu Agon
+  F3   Alex - Sagbo Koji
+  F5   Coconut - Igbologun
+  F6  Flour Mills - Marina
+  F7 Marina-Five Cowries
+
+UNIQUE Route VALUES:
+  Ikorodu - Lekki 1 - Addax - Five Cowries
