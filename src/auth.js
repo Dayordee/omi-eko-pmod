@@ -60,10 +60,12 @@ async function api(path, { method = "POST", body, token, query = "" } = {}) {
   try {
     response = await fetch(`${SUPABASE_URL}/auth/v1${path}${query}`, {
       method,
+      // The key goes in "apikey" only. New sb_publishable_ keys are not JWTs, so
+      // Authorization is sent only when we hold a signed-in user's access token.
       headers: {
         apikey: SUPABASE_KEY,
         "Content-Type": "application/json",
-        Authorization: `Bearer ${token || SUPABASE_KEY}`,
+        ...(token ? { Authorization: `Bearer ${token}` } : {}),
       },
       body: body ? JSON.stringify(body) : undefined,
     });
