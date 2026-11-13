@@ -74,6 +74,10 @@ app.innerHTML = `
     </nav>
   </header>
 
+  <button type="button" class="topbar-fold" id="topbar-fold" aria-expanded="true" aria-label="Hide header" title="Hide or show the header">
+    <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m6 15 6-6 6 6"/></svg>
+  </button>
+
   <main class="workspace">
 
     <aside class="sidebar">
@@ -1629,6 +1633,20 @@ function setupPanelToggle(buttonId, hideClass) {
 
 setupPanelToggle("#toggle-sidebar", "hide-sidebar");
 setupPanelToggle("#toggle-details", "hide-details");
+
+// --- Hide / show the header (small screens) ---
+
+const appShell = document.querySelector(".app-shell");
+const foldButton = document.querySelector("#topbar-fold");
+
+foldButton.addEventListener("click", () => {
+  const hidden = appShell.classList.toggle("topbar-hidden");
+
+  foldButton.setAttribute("aria-expanded", String(!hidden));
+  foldButton.setAttribute("aria-label", hidden ? "Show header" : "Hide header");
+
+  smoothMapResize();
+});
 
 // --- Full-screen map ---
 

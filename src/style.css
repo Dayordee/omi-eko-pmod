@@ -1434,3 +1434,101 @@ html[data-theme="dark"] .leaflet-control-attribution {
 html[data-theme="dark"] .leaflet-control-attribution a {
   color: #4fd3c8;
 }
+
+
+/* ==========================================
+   SMALL SCREENS: COMPACT HEADER + HIDE/SHOW BUTTON
+========================================== */
+
+.topbar-fold {
+  display: none;
+}
+
+@media (max-width: 1050px) {
+  .topbar {
+    position: sticky;
+    top: 0;
+    height: 60px;
+    overflow: hidden;
+    transition: height 0.3s ease, padding 0.3s ease, box-shadow 0.3s ease;
+  }
+
+  .app-shell.topbar-hidden .topbar {
+    height: 0;
+    padding-top: 0;
+    padding-bottom: 0;
+    box-shadow: none;
+    animation: none;
+  }
+
+  .topbar-actions {
+    min-width: 0;
+    overflow-x: auto;
+    scrollbar-width: none;
+  }
+
+  .topbar-actions::-webkit-scrollbar {
+    display: none;
+  }
+
+  .topbar-fold {
+    position: fixed;
+    top: 66px;
+    right: 10px;
+    z-index: 1100;
+    width: 34px;
+    height: 34px;
+    display: grid;
+    place-items: center;
+    color: #fff;
+    background: #13a6a0;
+    border: 2px solid #fff;
+    border-radius: 50%;
+    box-shadow: 0 2px 10px rgba(16, 43, 67, 0.35);
+    cursor: pointer;
+    transition: top 0.3s ease, transform 0.3s ease, background-color 0.2s ease;
+  }
+
+  .topbar-fold:hover {
+    background: #0e8883;
+  }
+
+  .app-shell.topbar-hidden .topbar-fold {
+    top: 10px;
+    transform: rotate(180deg);
+  }
+}
+
+@media (max-width: 700px) {
+  .brand {
+    min-width: 0;
+    flex: 0 0 auto;
+  }
+
+  .brand p {
+    display: none;
+  }
+
+  .brand h1 {
+    font-size: 15px;
+    letter-spacing: 1px;
+    white-space: nowrap;
+  }
+
+  .brand-mark {
+    width: 36px;
+    height: 36px;
+    font-size: 20px;
+  }
+}
+
+@media (max-width: 520px) {
+  /* Very narrow phones: logo only, so all the buttons fit */
+  .brand h1 {
+    display: none;
+  }
+}
+
+html[data-theme="dark"] .topbar-fold {
+  border-color: #0b1520;
+}
