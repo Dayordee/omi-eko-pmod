@@ -23,3 +23,8 @@ dist-ssr
 *.sln
 *.sw?
 _recovery/
+
+# Local environment (Supabase keys)
+.env
+.env.local
+.env.*.local
