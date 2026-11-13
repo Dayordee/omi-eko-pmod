@@ -219,7 +219,7 @@ function passwordField(id, label, autocomplete) {
 const VIEWS = {
   signin: {
     title: "Sign in",
-    lead: "Access the ferry planning and suitability dashboard.",
+    lead: "Access the ferry planning and sustainability dashboard.",
     html: `
       <form class="auth-form" data-form="signin" novalidate>
         <label class="auth-field" for="email"><span>Email</span>
@@ -353,10 +353,10 @@ export function requireAuth(mount) {
             <div><strong>OMI-EKO <span>PMOD</span></strong><small>Passenger Mobility &amp; Multimodal Transport</small></div>
           </div>
           <div class="auth-brand-copy">
-            <h2>Ferry transport planning and spatial suitability analysis for Lagos.</h2>
+            <h2>Ferry transport planning and spatial sustainability analysis for Lagos.</h2>
             <ul>
               <li>Ferry terminals and routes on a single interactive map</li>
-              <li>Terminal and route suitability indices</li>
+              <li>Terminal and route sustainability indices</li>
               <li>Road, rail and BRT network context</li>
             </ul>
           </div>
