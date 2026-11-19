@@ -1730,34 +1730,3 @@ async function initialiseApplication() {
 }
 
 initialiseApplication();
-
-// Mobile menu button (three lines) that opens and closes the top bar controls.
-(function setupMenuToggle() {
-  const bar = document.querySelector(".topbar");
-  const actions = document.querySelector(".topbar-actions");
-  if (!bar || !actions || document.getElementById("menu-toggle")) return;
-
-  const btn = document.createElement("button");
-  btn.type = "button";
-  btn.id = "menu-toggle";
-  btn.className = "menu-toggle";
-  btn.setAttribute("aria-label", "Open menu");
-  btn.setAttribute("aria-expanded", "false");
-  btn.innerHTML =
-    '<svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M4 6h16M4 12h16M4 18h16"/></svg>';
-  bar.insertBefore(btn, actions);
-
-  function setOpen(open) {
-    bar.classList.toggle("menu-open", open);
-    btn.setAttribute("aria-expanded", String(open));
-    btn.setAttribute("aria-label", open ? "Close menu" : "Open menu");
-  }
-
-  btn.addEventListener("click", () => setOpen(!bar.classList.contains("menu-open")));
-  document.addEventListener("click", (e) => {
-    if (!bar.contains(e.target)) setOpen(false);
-  });
-  document.addEventListener("keydown", (e) => {
-    if (e.key === "Escape") setOpen(false);
-  });
-})();
