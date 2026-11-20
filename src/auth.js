@@ -251,6 +251,7 @@ function pageShell() {
       </div>
 
       <p class="auth-legal">Passenger Mobility and Multimodal Transport Platform</p>
+      <div class="partner-credit"><img src="/images/planet.jpg" alt="Planet"></div>
 
     </section>
 

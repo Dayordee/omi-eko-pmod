@@ -916,3 +916,21 @@ html[data-theme="dark"] .profile-signout:hover {
 }
 
 .auth-network { opacity: 0.4; }
+
+/* Bottom-of-page partner logo */
+.partner-credit {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px 0 4px;
+}
+
+.partner-credit img {
+  height: 60px;
+  width: auto;
+  display: block;
+  padding: 5px 12px;
+  background: #fff;
+  border-radius: 8px;
+  box-shadow: 0 1px 6px rgba(0, 0, 0, 0.18);
+}

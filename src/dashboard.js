@@ -236,6 +236,8 @@ app.innerHTML = `
         <span>WGS 84 - EPSG:4326</span>
       </div>
 
+      <div class="partner-credit"><img src="/images/planet.jpg" alt="Planet"></div>
+
     </section>
 
     <aside class="details-panel">
